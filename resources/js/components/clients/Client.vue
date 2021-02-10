@@ -93,7 +93,8 @@
                       class="thump-d"
                       href="#"
                     >
-                      <i class="far fa-thumbs-down"></i>
+                      <!-- <i class="far fa-thumbs-down"></i> -->
+                      <i class="fas fa-sync"></i>
                     </a>
                   </td>
                   <td v-show="lead.isR_two_done === 1">
@@ -574,5 +575,16 @@ export default {
   -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.fa-sync {
+  animation: rolling 1s infinite linear;
+}
+@keyframes rolling {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 </style>

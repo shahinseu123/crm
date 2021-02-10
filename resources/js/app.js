@@ -188,12 +188,11 @@ const app = new Vue({
         // setTimeout(() => {
         //     this.divideAccess()
         // }, 500)
-
-        if (this.current_route) {
+        
+        if (this.current_route !== "NotFound") {
             Axios.get('api/access')
                 .then(({ data }) => {
                     this.accesses = data
-                    // console.log(data)
                     setTimeout(() => {
                         this.divideAccess()
                     }, 500)

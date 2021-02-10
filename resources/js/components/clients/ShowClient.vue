@@ -3,11 +3,11 @@
     <div class>
       <div class="card my-4" style="background: #1A237E">
         <div class="card-header">
-          <h2 style="color:white">Lead</h2>
+          <h2 style="color:white">Client</h2>
         </div>
         <div class="card-body">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-12">
               <div class="card p-4">
                 <div class="d-flex">
                   <ul class="detailul">
@@ -114,11 +114,11 @@
                 </h6>-->
               </div>
             </div>
-            <div class="col-md-6">
+            <!-- <div class="col-md-6">
               <div class="card">
                 <img src alt />
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

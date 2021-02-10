@@ -2738,6 +2738,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -10873,7 +10874,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".toast-title[data-v-615357dd] {\n  font-weight: bold;\n}\n.toast-message[data-v-615357dd] {\n  -ms-word-wrap: break-word;\n  word-wrap: break-word;\n}\n.toast-message a[data-v-615357dd],\n.toast-message label[data-v-615357dd] {\n  color: #FFFFFF;\n}\n.toast-message a[data-v-615357dd]:hover {\n  color: #CCCCCC;\n  text-decoration: none;\n}\n.toast-close-button[data-v-615357dd] {\n  position: relative;\n  right: -0.3em;\n  top: -0.3em;\n  float: right;\n  font-size: 20px;\n  font-weight: bold;\n  color: #FFFFFF;\n  -webkit-text-shadow: 0 1px 0 white;\n  text-shadow: 0 1px 0 white;\n  opacity: 0.8;\n}\n.toast-close-button[data-v-615357dd]:hover, .toast-close-button[data-v-615357dd]:focus {\n  color: #000000;\n  text-decoration: none;\n  cursor: pointer;\n  opacity: 0.4;\n}\n\n/*Additional properties for button version\n iOS requires the button element instead of an anchor tag.\n If you want the anchor version, it requires `href=\"#\"`.*/\nbutton.toast-close-button[data-v-615357dd] {\n  padding: 0;\n  cursor: pointer;\n  background: transparent;\n  border: 0;\n  -webkit-appearance: none;\n}\n.toast-top-center[data-v-615357dd] {\n  top: 0;\n  right: 0;\n  width: 100%;\n}\n.toast-bottom-center[data-v-615357dd] {\n  bottom: 0;\n  right: 0;\n  width: 100%;\n}\n.toast-top-full-width[data-v-615357dd] {\n  top: 0;\n  right: 0;\n  width: 100%;\n}\n.toast-bottom-full-width[data-v-615357dd] {\n  bottom: 0;\n  right: 0;\n  width: 100%;\n}\n.toast-top-left[data-v-615357dd] {\n  top: 12px;\n  left: 12px;\n}\n.toast-top-right[data-v-615357dd] {\n  top: 12px;\n  right: 12px;\n}\n.toast-bottom-right[data-v-615357dd] {\n  right: 12px;\n  bottom: 12px;\n}\n.toast-bottom-left[data-v-615357dd] {\n  bottom: 12px;\n  left: 12px;\n}\n.toast-container[data-v-615357dd] {\n  position: fixed;\n  z-index: 999999;\n  pointer-events: none;\n  /*overrides*/\n}\n.toast-container *[data-v-615357dd] {\n  box-sizing: border-box;\n}\n.toast-container > div[data-v-615357dd] {\n  position: relative;\n  pointer-events: auto;\n  overflow: hidden;\n  margin: 0 0 6px;\n  padding: 15px 15px 15px 50px;\n  width: 300px;\n  border-radius: 3px 3px 3px 3px;\n  background-position: 15px center;\n  background-repeat: no-repeat;\n  box-shadow: 0 0 12px #999999;\n  color: #FFFFFF;\n  opacity: 0.8;\n}\n.toast-container[data-v-615357dd] > :hover {\n  box-shadow: 0 0 12px #000000;\n  opacity: 1;\n  cursor: pointer;\n}\n.toast-container > .toast-info[data-v-615357dd] {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=\") !important;\n}\n.toast-container > .toast-error[data-v-615357dd] {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVEhLrZa/SgNBEMZzh0WKCClSCKaIYOED+AAKeQQLG8HWztLCImBrYadgIdY+gIKNYkBFSwu7CAoqCgkkoGBI/E28PdbLZmeDLgzZzcx83/zZ2SSXC1j9fr+I1Hq93g2yxH4iwM1vkoBWAdxCmpzTxfkN2RcyZNaHFIkSo10+8kgxkXIURV5HGxTmFuc75B2RfQkpxHG8aAgaAFa0tAHqYFfQ7Iwe2yhODk8+J4C7yAoRTWI3w/4klGRgR4lO7Rpn9+gvMyWp+uxFh8+H+ARlgN1nJuJuQAYvNkEnwGFck18Er4q3egEc/oO+mhLdKgRyhdNFiacC0rlOCbhNVz4H9FnAYgDBvU3QIioZlJFLJtsoHYRDfiZoUyIxqCtRpVlANq0EU4dApjrtgezPFad5S19Wgjkc0hNVnuF4HjVA6C7QrSIbylB+oZe3aHgBsqlNqKYH48jXyJKMuAbiyVJ8KzaB3eRc0pg9VwQ4niFryI68qiOi3AbjwdsfnAtk0bCjTLJKr6mrD9g8iq/S/B81hguOMlQTnVyG40wAcjnmgsCNESDrjme7wfftP4P7SP4N3CJZdvzoNyGq2c/HWOXJGsvVg+RA/k2MC/wN6I2YA2Pt8GkAAAAASUVORK5CYII=\") !important;\n}\n.toast-container > .toast-success[data-v-615357dd] {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==\") !important;\n}\n.toast-container > .toast-warning[data-v-615357dd] {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=\") !important;\n}\n.toast-container.toast-top-center > div[data-v-615357dd], .toast-container.toast-bottom-center > div[data-v-615357dd] {\n  width: 300px;\n  margin-left: auto;\n  margin-right: auto;\n}\n.toast-container.toast-top-full-width > div[data-v-615357dd], .toast-container.toast-bottom-full-width > div[data-v-615357dd] {\n  width: 96%;\n  margin-left: auto;\n  margin-right: auto;\n}\n.toast[data-v-615357dd] {\n  background-color: #030303;\n}\n.toast-success[data-v-615357dd] {\n  background-color: #51A351;\n}\n.toast-error[data-v-615357dd] {\n  background-color: #BD362F;\n}\n.toast-info[data-v-615357dd] {\n  background-color: #2F96B4;\n}\n.toast-warning[data-v-615357dd] {\n  background-color: #F89406;\n}\n.toast-progress[data-v-615357dd] {\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  height: 4px;\n  background-color: #000000;\n  opacity: 0.4;\n}\n\n/*Responsive Design*/\n@media all and (max-width: 240px) {\n.toast-container > div[data-v-615357dd] {\n    padding: 8px 8px 8px 50px;\n    width: 11em;\n}\n.toast-container .toast-close-button[data-v-615357dd] {\n    right: -0.2em;\n    top: -0.2em;\n}\n}\n@media all and (min-width: 241px) and (max-width: 480px) {\n.toast-container > div[data-v-615357dd] {\n    padding: 8px 8px 8px 50px;\n    width: 18em;\n}\n.toast-container .toast-close-button[data-v-615357dd] {\n    right: -0.2em;\n    top: -0.2em;\n}\n}\n@media all and (min-width: 481px) and (max-width: 768px) {\n.toast-container > div[data-v-615357dd] {\n    padding: 15px 15px 15px 50px;\n    width: 25em;\n}\n}\n#hi[data-v-615357dd] {\n  background-color: #ffffff;\n}\n.lead-btn[data-v-615357dd] {\n  padding: 5px 30px;\n  background: #1a237e;\n  color: white;\n  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);\n}\n.lead-btn[data-v-615357dd]:hover {\n  text-decoration: none;\n  color: white;\n}\n.lead-btn-red[data-v-615357dd] {\n  padding: 5px 30px;\n  background: #ef5350;\n  color: white;\n  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);\n}\n.lead-btn-red[data-v-615357dd]:hover {\n  text-decoration: none;\n  color: white;\n}\n.lead-btn-or[data-v-615357dd] {\n  padding: 8px;\n  text-align: center;\n  background: white;\n  color: white;\n  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);\n}\n.lead-btn-or[data-v-615357dd]:hover {\n  text-decoration: none;\n  color: white;\n}\n.add-leads[data-v-615357dd] {\n  padding: 9px 30px;\n}\n.thump[data-v-615357dd] {\n  padding: 6px 9px;\n  text-align: center;\n  background: darkblue;\n  color: white;\n  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);\n}\n.thump-d[data-v-615357dd] {\n  padding: 6px 9px;\n  text-align: center;\n  background: #ef5350;\n  color: white;\n  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);\n}", ""]);
+exports.push([module.i, ".toast-title[data-v-615357dd] {\n  font-weight: bold;\n}\n.toast-message[data-v-615357dd] {\n  -ms-word-wrap: break-word;\n  word-wrap: break-word;\n}\n.toast-message a[data-v-615357dd],\n.toast-message label[data-v-615357dd] {\n  color: #FFFFFF;\n}\n.toast-message a[data-v-615357dd]:hover {\n  color: #CCCCCC;\n  text-decoration: none;\n}\n.toast-close-button[data-v-615357dd] {\n  position: relative;\n  right: -0.3em;\n  top: -0.3em;\n  float: right;\n  font-size: 20px;\n  font-weight: bold;\n  color: #FFFFFF;\n  -webkit-text-shadow: 0 1px 0 white;\n  text-shadow: 0 1px 0 white;\n  opacity: 0.8;\n}\n.toast-close-button[data-v-615357dd]:hover, .toast-close-button[data-v-615357dd]:focus {\n  color: #000000;\n  text-decoration: none;\n  cursor: pointer;\n  opacity: 0.4;\n}\n\n/*Additional properties for button version\n iOS requires the button element instead of an anchor tag.\n If you want the anchor version, it requires `href=\"#\"`.*/\nbutton.toast-close-button[data-v-615357dd] {\n  padding: 0;\n  cursor: pointer;\n  background: transparent;\n  border: 0;\n  -webkit-appearance: none;\n}\n.toast-top-center[data-v-615357dd] {\n  top: 0;\n  right: 0;\n  width: 100%;\n}\n.toast-bottom-center[data-v-615357dd] {\n  bottom: 0;\n  right: 0;\n  width: 100%;\n}\n.toast-top-full-width[data-v-615357dd] {\n  top: 0;\n  right: 0;\n  width: 100%;\n}\n.toast-bottom-full-width[data-v-615357dd] {\n  bottom: 0;\n  right: 0;\n  width: 100%;\n}\n.toast-top-left[data-v-615357dd] {\n  top: 12px;\n  left: 12px;\n}\n.toast-top-right[data-v-615357dd] {\n  top: 12px;\n  right: 12px;\n}\n.toast-bottom-right[data-v-615357dd] {\n  right: 12px;\n  bottom: 12px;\n}\n.toast-bottom-left[data-v-615357dd] {\n  bottom: 12px;\n  left: 12px;\n}\n.toast-container[data-v-615357dd] {\n  position: fixed;\n  z-index: 999999;\n  pointer-events: none;\n  /*overrides*/\n}\n.toast-container *[data-v-615357dd] {\n  box-sizing: border-box;\n}\n.toast-container > div[data-v-615357dd] {\n  position: relative;\n  pointer-events: auto;\n  overflow: hidden;\n  margin: 0 0 6px;\n  padding: 15px 15px 15px 50px;\n  width: 300px;\n  border-radius: 3px 3px 3px 3px;\n  background-position: 15px center;\n  background-repeat: no-repeat;\n  box-shadow: 0 0 12px #999999;\n  color: #FFFFFF;\n  opacity: 0.8;\n}\n.toast-container[data-v-615357dd] > :hover {\n  box-shadow: 0 0 12px #000000;\n  opacity: 1;\n  cursor: pointer;\n}\n.toast-container > .toast-info[data-v-615357dd] {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=\") !important;\n}\n.toast-container > .toast-error[data-v-615357dd] {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVEhLrZa/SgNBEMZzh0WKCClSCKaIYOED+AAKeQQLG8HWztLCImBrYadgIdY+gIKNYkBFSwu7CAoqCgkkoGBI/E28PdbLZmeDLgzZzcx83/zZ2SSXC1j9fr+I1Hq93g2yxH4iwM1vkoBWAdxCmpzTxfkN2RcyZNaHFIkSo10+8kgxkXIURV5HGxTmFuc75B2RfQkpxHG8aAgaAFa0tAHqYFfQ7Iwe2yhODk8+J4C7yAoRTWI3w/4klGRgR4lO7Rpn9+gvMyWp+uxFh8+H+ARlgN1nJuJuQAYvNkEnwGFck18Er4q3egEc/oO+mhLdKgRyhdNFiacC0rlOCbhNVz4H9FnAYgDBvU3QIioZlJFLJtsoHYRDfiZoUyIxqCtRpVlANq0EU4dApjrtgezPFad5S19Wgjkc0hNVnuF4HjVA6C7QrSIbylB+oZe3aHgBsqlNqKYH48jXyJKMuAbiyVJ8KzaB3eRc0pg9VwQ4niFryI68qiOi3AbjwdsfnAtk0bCjTLJKr6mrD9g8iq/S/B81hguOMlQTnVyG40wAcjnmgsCNESDrjme7wfftP4P7SP4N3CJZdvzoNyGq2c/HWOXJGsvVg+RA/k2MC/wN6I2YA2Pt8GkAAAAASUVORK5CYII=\") !important;\n}\n.toast-container > .toast-success[data-v-615357dd] {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==\") !important;\n}\n.toast-container > .toast-warning[data-v-615357dd] {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=\") !important;\n}\n.toast-container.toast-top-center > div[data-v-615357dd], .toast-container.toast-bottom-center > div[data-v-615357dd] {\n  width: 300px;\n  margin-left: auto;\n  margin-right: auto;\n}\n.toast-container.toast-top-full-width > div[data-v-615357dd], .toast-container.toast-bottom-full-width > div[data-v-615357dd] {\n  width: 96%;\n  margin-left: auto;\n  margin-right: auto;\n}\n.toast[data-v-615357dd] {\n  background-color: #030303;\n}\n.toast-success[data-v-615357dd] {\n  background-color: #51A351;\n}\n.toast-error[data-v-615357dd] {\n  background-color: #BD362F;\n}\n.toast-info[data-v-615357dd] {\n  background-color: #2F96B4;\n}\n.toast-warning[data-v-615357dd] {\n  background-color: #F89406;\n}\n.toast-progress[data-v-615357dd] {\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  height: 4px;\n  background-color: #000000;\n  opacity: 0.4;\n}\n\n/*Responsive Design*/\n@media all and (max-width: 240px) {\n.toast-container > div[data-v-615357dd] {\n    padding: 8px 8px 8px 50px;\n    width: 11em;\n}\n.toast-container .toast-close-button[data-v-615357dd] {\n    right: -0.2em;\n    top: -0.2em;\n}\n}\n@media all and (min-width: 241px) and (max-width: 480px) {\n.toast-container > div[data-v-615357dd] {\n    padding: 8px 8px 8px 50px;\n    width: 18em;\n}\n.toast-container .toast-close-button[data-v-615357dd] {\n    right: -0.2em;\n    top: -0.2em;\n}\n}\n@media all and (min-width: 481px) and (max-width: 768px) {\n.toast-container > div[data-v-615357dd] {\n    padding: 15px 15px 15px 50px;\n    width: 25em;\n}\n}\n#hi[data-v-615357dd] {\n  background-color: #ffffff;\n}\n.lead-btn[data-v-615357dd] {\n  padding: 5px 30px;\n  background: #1a237e;\n  color: white;\n  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);\n}\n.lead-btn[data-v-615357dd]:hover {\n  text-decoration: none;\n  color: white;\n}\n.lead-btn-red[data-v-615357dd] {\n  padding: 5px 30px;\n  background: #ef5350;\n  color: white;\n  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);\n}\n.lead-btn-red[data-v-615357dd]:hover {\n  text-decoration: none;\n  color: white;\n}\n.lead-btn-or[data-v-615357dd] {\n  padding: 8px;\n  text-align: center;\n  background: white;\n  color: white;\n  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);\n}\n.lead-btn-or[data-v-615357dd]:hover {\n  text-decoration: none;\n  color: white;\n}\n.add-leads[data-v-615357dd] {\n  padding: 9px 30px;\n}\n.thump[data-v-615357dd] {\n  padding: 6px 9px;\n  text-align: center;\n  background: darkblue;\n  color: white;\n  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);\n}\n.thump-d[data-v-615357dd] {\n  padding: 6px 9px;\n  text-align: center;\n  background: #ef5350;\n  color: white;\n  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);\n}\n.fa-sync[data-v-615357dd] {\n  -webkit-animation: rolling-data-v-615357dd 1s infinite linear;\n          animation: rolling-data-v-615357dd 1s infinite linear;\n}\n@-webkit-keyframes rolling-data-v-615357dd {\n0% {\n    transform: rotate(0deg);\n}\n100% {\n    transform: rotate(360deg);\n}\n}\n@keyframes rolling-data-v-615357dd {\n0% {\n    transform: rotate(0deg);\n}\n100% {\n    transform: rotate(360deg);\n}\n}", ""]);
 
 // exports
 
@@ -10968,7 +10969,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.detailul[data-v-108a8111] {\r\n  /* display: inline-block; */\r\n  /* padding: 0;\r\n  margin: 0; */\r\n  list-style-type: none;\r\n  margin-left: 30px;\r\n  padding: 0;\n}\n.detailul li[data-v-108a8111] {\r\n  padding: 5px;\r\n  /* background: #e8e8e8;\r\n  margin: 2px;\r\n  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);\r\n  -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);\r\n  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); */\n}\r\n", ""]);
+exports.push([module.i, "\nbody[data-v-108a8111]{\r\n    min-height: none;\n}\n.detailul[data-v-108a8111] {\r\n  /* display: inline-block; */\r\n  /* padding: 0;\r\n  margin: 0; */\r\n  list-style-type: none;\r\n  margin-left: 30px;\r\n  padding: 0;\n}\n.detailul li[data-v-108a8111] {\r\n  padding: 5px;\r\n  /* background: #e8e8e8;\r\n  margin: 2px;\r\n  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);\r\n  -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);\r\n  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75); */\n}\r\n", ""]);
 
 // exports
 
@@ -69978,7 +69979,7 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "card-body" }, [
             _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-md-6" }, [
+              _c("div", { staticClass: "col-12" }, [
                 _c("div", { staticClass: "card p-4" }, [
                   _c("div", { staticClass: "d-flex" }, [
                     _c("ul", { staticClass: "detailul" }, [
@@ -70156,9 +70157,7 @@ var render = function() {
                     ])
                   ])
                 ])
-              ]),
-              _vm._v(" "),
-              _vm._m(12)
+              ])
             ])
           ])
         ]
@@ -70172,7 +70171,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
-      _c("h2", { staticStyle: { color: "white" } }, [_vm._v("Lead")])
+      _c("h2", { staticStyle: { color: "white" } }, [_vm._v("Activity")])
     ])
   },
   function() {
@@ -70305,16 +70304,6 @@ var staticRenderFns = [
         staticStyle: { color: "#19217A" }
       }),
       _vm._v("Registered At\n                  ")
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-6" }, [
-      _c("div", { staticClass: "card" }, [
-        _c("img", { attrs: { src: "", alt: "" } })
-      ])
     ])
   }
 ]
@@ -70560,7 +70549,7 @@ var render = function() {
                                 }
                               }
                             },
-                            [_c("i", { staticClass: "far fa-thumbs-down" })]
+                            [_c("i", { staticClass: "fas fa-sync" })]
                           )
                         ]
                       ),
@@ -71974,7 +71963,7 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "card-body" }, [
             _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-md-6" }, [
+              _c("div", { staticClass: "col-12" }, [
                 _c("div", { staticClass: "card p-4" }, [
                   _c("div", { staticClass: "d-flex" }, [
                     _c("ul", { staticClass: "detailul" }, [
@@ -72152,9 +72141,7 @@ var render = function() {
                     ])
                   ])
                 ])
-              ]),
-              _vm._v(" "),
-              _vm._m(12)
+              ])
             ])
           ])
         ]
@@ -72168,7 +72155,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
-      _c("h2", { staticStyle: { color: "white" } }, [_vm._v("Lead")])
+      _c("h2", { staticStyle: { color: "white" } }, [_vm._v("Client")])
     ])
   },
   function() {
@@ -72301,16 +72288,6 @@ var staticRenderFns = [
         staticStyle: { color: "#19217A" }
       }),
       _vm._v("Registered At\n                  ")
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-6" }, [
-      _c("div", { staticClass: "card" }, [
-        _c("img", { attrs: { src: "", alt: "" } })
-      ])
     ])
   }
 ]
@@ -73520,7 +73497,7 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "card-body" }, [
             _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-md-6" }, [
+              _c("div", { staticClass: "col-12" }, [
                 _c("div", { staticClass: "card p-4" }, [
                   _c("div", { staticClass: "d-flex" }, [
                     _c("ul", { staticClass: "detailul" }, [
@@ -73698,9 +73675,7 @@ var render = function() {
                     ])
                   ])
                 ])
-              ]),
-              _vm._v(" "),
-              _vm._m(12)
+              ])
             ])
           ])
         ]
@@ -73847,16 +73822,6 @@ var staticRenderFns = [
         staticStyle: { color: "#19217A" }
       }),
       _vm._v("Registered At\n                  ")
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-6" }, [
-      _c("div", { staticClass: "card" }, [
-        _c("img", { attrs: { src: "", alt: "" } })
-      ])
     ])
   }
 ]
@@ -95709,11 +95674,10 @@ var app = new Vue((_Vue = {
   //     this.divideAccess()
   // }, 500)
 
-  if (this.current_route) {
+  if (this.current_route !== "NotFound") {
     axios__WEBPACK_IMPORTED_MODULE_7___default.a.get('api/access').then(function (_ref) {
       var data = _ref.data;
-      _this.accesses = data; // console.log(data)
-
+      _this.accesses = data;
       setTimeout(function () {
         _this.divideAccess();
       }, 500);
