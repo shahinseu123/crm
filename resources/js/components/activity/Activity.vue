@@ -53,60 +53,58 @@
                   </td>
                   <td>
                     <button
-                      v-show="ac.isR_one_done"
-                      disabled
                       class="thump"
                       style="background:#9575cd"
                     >
-                      <i v-show="ac.isR_two_done" class="far fa-thumbs-up"></i>
-                      <i v-show="!ac.isR_two_done" class="fas fa-sync"></i>
+                      <i v-show="ac.isR_two_done === 1" class="far fa-thumbs-up"></i>
+                      <i v-show="ac.isR_two_done === 2" class="fas fa-sync"></i>
+                      <i v-show="ac.isR_two_done === 0" class="fas fa-thumbs-down"></i>
                     </button>
-                    <button
+                    <!-- <button
                       v-show="!ac.isR_one_done"
                       disabled
                       class="thump-d"
                       style="background:#ef9a9a"
                     >
                       <i class="far fa-thumbs-down"></i>
-                    </button>
+                    </button> -->
                   </td>
                   <td>
                     <button
-                      v-show="ac.isR_two_done"
-                      disabled
                       class="thump"
                       style="background:#9575cd"
                     >
-                      <i v-show="ac.isR_three_done" class="far fa-thumbs-up"></i>
-                      <i v-show="!ac.isR_three_done" class="fas fa-sync"></i>
+                      <i v-show="ac.isR_three_done === 1" class="far fa-thumbs-up"></i>
+                      <i v-show="ac.isR_three_done === 2" class="fas fa-sync"></i>
+                      <i v-show="ac.isR_three_done === 0" class="far fa-thumbs-down"></i>
                     </button>
-                    <button
+                    <!-- <button
                       v-show="!ac.isR_two_done"
                       disabled
                       class="thump-d"
                       style="background:#ef9a9a"
                     >
                       <i class="far fa-thumbs-down"></i>
-                    </button>
+                    </button> -->
                   </td>
                   <td>
                     <button
-                      v-show="ac.isR_three_done"
-                      disabled
                       class="thump"
                       style="background:#9575cd"
                     >
                       <!-- <i v-show="ac.isR_three_done" class="far fa-thumbs-up"></i> -->
-                      <i v-show="ac.isR_three_done" class="fas fa-sync"></i>
+                      <i v-show="ac.isR_three_done === 0" class="far fa-thumbs-down"></i>
+                      <i v-show="ac.isR_three_done === 1" class="far fa-thumbs-up"></i>
+                      <i v-show="ac.isR_three_done === 2" class="fas fa-sync"></i>
                     </button>
-                    <button
+                    <!-- <button
                       v-show="!ac.isR_three_done"
                       disabled
                       class="thump-d"
                       style="background:#ef9a9a"
                     >
                       <i class="far fa-thumbs-down"></i>
-                    </button>
+                    </button> -->
                   </td>
                   <!-- <td>
                   <a data-toggle="tooltip" title="Change to Client" class="lead-btn" href="#"></a>

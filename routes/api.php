@@ -35,13 +35,16 @@ Route::get('makeactivitydone/{id}', 'API\ActivityController@make_activity_done')
 Route::get('makeinactive/{id}', 'API\LeadsController@make_inactive');
 Route::get('makeclient/{id}', 'API\LeadsController@make_client');
 Route::get('makelead/{id}', 'API\ClientController@make_lead');
+// Route::get('makeronenotdone/{id}', 'API\ClientController@make_r_one_not_done');
 Route::get('makeronenotdone/{id}', 'API\ClientController@make_r_one_not_done');
-Route::get('makeronenotdone/{id}', 'API\ClientController@make_r_one_not_done');
+Route::get('makeroneworking/{id}', 'API\ClientController@make_r_one_working');
 Route::get('makeronedone/{id}', 'API\ClientController@make_r_one_done');
 Route::get('makertwonotdone/{id}', 'API\ClientController@make_r_two_not_done');
 Route::get('makertwodone/{id}', 'API\ClientController@make_r_two_done');
+Route::get('makertwoworking/{id}', 'API\ClientController@make_r_two_working');
 Route::get('makerthreenotdone/{id}', 'API\ClientController@make_r_three_not_done');
 Route::get('makerthreedone/{id}', 'API\ClientController@make_r_three_done');
+Route::get('makerthreeworking/{id}', 'API\ClientController@make_r_three_working');
 Route::get('send-to-activity/{id}', 'API\LeadsController@make_activity');
 Route::get('sendActivityToLead/{id}', 'API\LeadsController@make_activity_to_lead');
 Route::get('getauthuser', 'API\UserController@get_auth_user');

@@ -2295,8 +2295,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2739,6 +2737,41 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2837,10 +2870,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         this.$toastr.e("You are not authorize to delete client");
       }
     },
-    makeRthreeDone: function makeRthreeDone(lead) {
+    makeRthreeWorking: function makeRthreeWorking(lead) {
       if (this.client_r_three_done_not_done_permission) {
         if (lead.isR_one_done && lead.isR_two_done) {
-          axios.get("api/makerthreedone/".concat(lead.id)).then(function () {
+          axios.get("api/makerthreeworking/".concat(lead.id)).then(function () {
             Bus.$emit("Fired");
           })["catch"](function (err) {
             return console.log(err);
@@ -2863,10 +2896,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         this.$toastr.e("You are not authorized for this action ");
       }
     },
-    makeRtwoDone: function makeRtwoDone(lead) {
+    makeRtwoWorking: function makeRtwoWorking(lead) {
       if (this.client_r_two_done_not_done_permission) {
         if (lead.isR_one_done) {
-          axios.get("api/makertwodone/".concat(lead.id)).then(function () {
+          axios.get("api/makertwoworking/".concat(lead.id)).then(function () {
             Bus.$emit("Fired");
           })["catch"](function (err) {
             return console.log(err);
@@ -2893,9 +2926,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         this.$toastr.e("You are not authorized for this action ");
       }
     },
-    makeRoneDone: function makeRoneDone(id) {
+    makeRoneWorking: function makeRoneWorking(id) {
       if (this.client_r_one_done_not_done_permission) {
-        axios.get("api/makeronedone/".concat(id)).then(function () {
+        axios.get("api/makeroneworking/".concat(id)).then(function () {
           Bus.$emit("Fired");
         })["catch"](function (err) {
           return console.log(err);
@@ -2919,13 +2952,17 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         this.$toastr.e("You are not authorized for this action");
       }
     },
-    makeLead: function makeLead(id) {
+    makeLead: function makeLead(lead) {
       if (this.client_to_lead_permission) {
-        axios.get("api/makelead/".concat(id)).then(function () {
-          Bus.$emit("Fired");
-        })["catch"](function (err) {
-          return console.log(err);
-        });
+        if (lead.isActivity != 1) {
+          axios.get("api/makelead/".concat(lead.id)).then(function () {
+            Bus.$emit("Fired");
+          })["catch"](function (err) {
+            return console.log(err);
+          });
+        } else {
+          this.$toastr.e("You can't make a Client to Lead when working");
+        }
       } else {
         this.$toastr.e("You are not authorized to change client status");
       }
@@ -69670,17 +69707,8 @@ var render = function() {
                         _c(
                           "button",
                           {
-                            directives: [
-                              {
-                                name: "show",
-                                rawName: "v-show",
-                                value: ac.isR_one_done,
-                                expression: "ac.isR_one_done"
-                              }
-                            ],
                             staticClass: "thump",
-                            staticStyle: { background: "#9575cd" },
-                            attrs: { disabled: "" }
+                            staticStyle: { background: "#9575cd" }
                           },
                           [
                             _c("i", {
@@ -69688,8 +69716,8 @@ var render = function() {
                                 {
                                   name: "show",
                                   rawName: "v-show",
-                                  value: ac.isR_two_done,
-                                  expression: "ac.isR_two_done"
+                                  value: ac.isR_two_done === 1,
+                                  expression: "ac.isR_two_done === 1"
                                 }
                               ],
                               staticClass: "far fa-thumbs-up"
@@ -69700,31 +69728,25 @@ var render = function() {
                                 {
                                   name: "show",
                                   rawName: "v-show",
-                                  value: !ac.isR_two_done,
-                                  expression: "!ac.isR_two_done"
+                                  value: ac.isR_two_done === 2,
+                                  expression: "ac.isR_two_done === 2"
                                 }
                               ],
                               staticClass: "fas fa-sync"
+                            }),
+                            _vm._v(" "),
+                            _c("i", {
+                              directives: [
+                                {
+                                  name: "show",
+                                  rawName: "v-show",
+                                  value: ac.isR_two_done === 0,
+                                  expression: "ac.isR_two_done === 0"
+                                }
+                              ],
+                              staticClass: "fas fa-thumbs-down"
                             })
                           ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "button",
-                          {
-                            directives: [
-                              {
-                                name: "show",
-                                rawName: "v-show",
-                                value: !ac.isR_one_done,
-                                expression: "!ac.isR_one_done"
-                              }
-                            ],
-                            staticClass: "thump-d",
-                            staticStyle: { background: "#ef9a9a" },
-                            attrs: { disabled: "" }
-                          },
-                          [_c("i", { staticClass: "far fa-thumbs-down" })]
                         )
                       ]),
                       _vm._v(" "),
@@ -69732,17 +69754,8 @@ var render = function() {
                         _c(
                           "button",
                           {
-                            directives: [
-                              {
-                                name: "show",
-                                rawName: "v-show",
-                                value: ac.isR_two_done,
-                                expression: "ac.isR_two_done"
-                              }
-                            ],
                             staticClass: "thump",
-                            staticStyle: { background: "#9575cd" },
-                            attrs: { disabled: "" }
+                            staticStyle: { background: "#9575cd" }
                           },
                           [
                             _c("i", {
@@ -69750,8 +69763,8 @@ var render = function() {
                                 {
                                   name: "show",
                                   rawName: "v-show",
-                                  value: ac.isR_three_done,
-                                  expression: "ac.isR_three_done"
+                                  value: ac.isR_three_done === 1,
+                                  expression: "ac.isR_three_done === 1"
                                 }
                               ],
                               staticClass: "far fa-thumbs-up"
@@ -69762,31 +69775,25 @@ var render = function() {
                                 {
                                   name: "show",
                                   rawName: "v-show",
-                                  value: !ac.isR_three_done,
-                                  expression: "!ac.isR_three_done"
+                                  value: ac.isR_three_done === 2,
+                                  expression: "ac.isR_three_done === 2"
                                 }
                               ],
                               staticClass: "fas fa-sync"
+                            }),
+                            _vm._v(" "),
+                            _c("i", {
+                              directives: [
+                                {
+                                  name: "show",
+                                  rawName: "v-show",
+                                  value: ac.isR_three_done === 0,
+                                  expression: "ac.isR_three_done === 0"
+                                }
+                              ],
+                              staticClass: "far fa-thumbs-down"
                             })
                           ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "button",
-                          {
-                            directives: [
-                              {
-                                name: "show",
-                                rawName: "v-show",
-                                value: !ac.isR_two_done,
-                                expression: "!ac.isR_two_done"
-                              }
-                            ],
-                            staticClass: "thump-d",
-                            staticStyle: { background: "#ef9a9a" },
-                            attrs: { disabled: "" }
-                          },
-                          [_c("i", { staticClass: "far fa-thumbs-down" })]
                         )
                       ]),
                       _vm._v(" "),
@@ -69794,17 +69801,8 @@ var render = function() {
                         _c(
                           "button",
                           {
-                            directives: [
-                              {
-                                name: "show",
-                                rawName: "v-show",
-                                value: ac.isR_three_done,
-                                expression: "ac.isR_three_done"
-                              }
-                            ],
                             staticClass: "thump",
-                            staticStyle: { background: "#9575cd" },
-                            attrs: { disabled: "" }
+                            staticStyle: { background: "#9575cd" }
                           },
                           [
                             _c("i", {
@@ -69812,31 +69810,37 @@ var render = function() {
                                 {
                                   name: "show",
                                   rawName: "v-show",
-                                  value: ac.isR_three_done,
-                                  expression: "ac.isR_three_done"
+                                  value: ac.isR_three_done === 0,
+                                  expression: "ac.isR_three_done === 0"
+                                }
+                              ],
+                              staticClass: "far fa-thumbs-down"
+                            }),
+                            _vm._v(" "),
+                            _c("i", {
+                              directives: [
+                                {
+                                  name: "show",
+                                  rawName: "v-show",
+                                  value: ac.isR_three_done === 1,
+                                  expression: "ac.isR_three_done === 1"
+                                }
+                              ],
+                              staticClass: "far fa-thumbs-up"
+                            }),
+                            _vm._v(" "),
+                            _c("i", {
+                              directives: [
+                                {
+                                  name: "show",
+                                  rawName: "v-show",
+                                  value: ac.isR_three_done === 2,
+                                  expression: "ac.isR_three_done === 2"
                                 }
                               ],
                               staticClass: "fas fa-sync"
                             })
                           ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "button",
-                          {
-                            directives: [
-                              {
-                                name: "show",
-                                rawName: "v-show",
-                                value: !ac.isR_three_done,
-                                expression: "!ac.isR_three_done"
-                              }
-                            ],
-                            staticClass: "thump-d",
-                            staticStyle: { background: "#ef9a9a" },
-                            attrs: { disabled: "" }
-                          },
-                          [_c("i", { staticClass: "far fa-thumbs-down" })]
                         )
                       ]),
                       _vm._v(" "),
@@ -70434,7 +70438,7 @@ var render = function() {
                             },
                             on: {
                               click: function($event) {
-                                return _vm.makeLead(lead.id)
+                                return _vm.makeLead(lead)
                               }
                             }
                           },
@@ -70495,6 +70499,40 @@ var render = function() {
                             {
                               name: "show",
                               rawName: "v-show",
+                              value: lead.isR_one_done === 2,
+                              expression: "lead.isR_one_done === 2"
+                            }
+                          ]
+                        },
+                        [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "thump",
+                              staticStyle: { background: "yellow" },
+                              attrs: {
+                                "data-toggle": "tooltip",
+                                title: "Make not done",
+                                href: "#"
+                              },
+                              on: {
+                                click: function($event) {
+                                  return _vm.makeRoneNotDone(lead)
+                                }
+                              }
+                            },
+                            [_c("i", { staticClass: "fas fa-sync red" })]
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "td",
+                        {
+                          directives: [
+                            {
+                              name: "show",
+                              rawName: "v-show",
                               value: lead.isR_one_done === 1,
                               expression: "lead.isR_one_done === 1"
                             }
@@ -70545,11 +70583,45 @@ var render = function() {
                               },
                               on: {
                                 click: function($event) {
-                                  return _vm.makeRoneDone(lead.id)
+                                  return _vm.makeRoneWorking(lead.id)
                                 }
                               }
                             },
-                            [_c("i", { staticClass: "fas fa-sync" })]
+                            [_c("i", { staticClass: "far fa-thumbs-down" })]
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "td",
+                        {
+                          directives: [
+                            {
+                              name: "show",
+                              rawName: "v-show",
+                              value: lead.isR_two_done === 2,
+                              expression: "lead.isR_two_done === 2"
+                            }
+                          ]
+                        },
+                        [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "thump",
+                              staticStyle: { background: "yellow" },
+                              attrs: {
+                                "data-toggle": "tooltip",
+                                title: "Make not done",
+                                href: "#"
+                              },
+                              on: {
+                                click: function($event) {
+                                  return _vm.makeRtwoNotDone(lead)
+                                }
+                              }
+                            },
+                            [_c("i", { staticClass: "fas fa-sync red" })]
                           )
                         ]
                       ),
@@ -70611,11 +70683,45 @@ var render = function() {
                               },
                               on: {
                                 click: function($event) {
-                                  return _vm.makeRtwoDone(lead)
+                                  return _vm.makeRtwoWorking(lead)
                                 }
                               }
                             },
                             [_c("i", { staticClass: "far fa-thumbs-down" })]
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "td",
+                        {
+                          directives: [
+                            {
+                              name: "show",
+                              rawName: "v-show",
+                              value: lead.isR_three_done === 2,
+                              expression: "lead.isR_three_done === 2"
+                            }
+                          ]
+                        },
+                        [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "thump",
+                              staticStyle: { background: "yellow" },
+                              attrs: {
+                                "data-toggle": "tooltip",
+                                title: "Make not done",
+                                href: "#"
+                              },
+                              on: {
+                                click: function($event) {
+                                  return _vm.makeRthreeNotDone(lead.id)
+                                }
+                              }
+                            },
+                            [_c("i", { staticClass: "fas fa-sync red" })]
                           )
                         ]
                       ),
@@ -70677,7 +70783,7 @@ var render = function() {
                               },
                               on: {
                                 click: function($event) {
-                                  return _vm.makeRthreeDone(lead)
+                                  return _vm.makeRthreeWorking(lead)
                                 }
                               }
                             },

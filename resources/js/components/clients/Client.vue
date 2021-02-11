@@ -55,7 +55,7 @@
                     <a
                       data-toggle="tooltip"
                       title="Make lead"
-                      @click="makeLead(lead.id)"
+                      @click="makeLead(lead)"
                       class="lead-btn"
                       href="#"
                     >{{lead.isLead|isleads}}</a>
@@ -74,6 +74,18 @@
                       @click="makeActive(lead.id)"
                     >{{lead.isActive|isactive}}</a>
                   </td>
+                  <td v-show="lead.isR_one_done === 2">
+                    <a
+                      @click="makeRoneNotDone(lead)"
+                      data-toggle="tooltip"
+                      title="Make not done"
+                      class="thump"
+                      style="background:yellow"
+                      href="#"
+                    >
+                     <i class="fas fa-sync red"></i>
+                    </a>
+                  </td>
                   <td v-show="lead.isR_one_done === 1">
                     <a
                       @click="makeRoneNotDone(lead)"
@@ -87,14 +99,25 @@
                   </td>
                   <td v-show="lead.isR_one_done === 0">
                     <a
-                      @click="makeRoneDone(lead.id)"
+                      @click="makeRoneWorking(lead.id)"
                       data-toggle="tooltip"
                       title="Make done"
                       class="thump-d"
                       href="#"
                     >
-                      <!-- <i class="far fa-thumbs-down"></i> -->
-                      <i class="fas fa-sync"></i>
+                      <i class="far fa-thumbs-down"></i>                   
+                    </a>
+                  </td>
+                  <td v-show="lead.isR_two_done === 2">
+                    <a
+                      @click="makeRtwoNotDone(lead)"
+                      data-toggle="tooltip"
+                      title="Make not done"
+                      class="thump"
+                      style="background:yellow"
+                      href="#"
+                    >
+                      <i class="fas fa-sync red"></i>
                     </a>
                   </td>
                   <td v-show="lead.isR_two_done === 1">
@@ -110,13 +133,25 @@
                   </td>
                   <td v-show="lead.isR_two_done === 0">
                     <a
-                      @click="makeRtwoDone(lead)"
+                      @click="makeRtwoWorking(lead)"
                       data-toggle="tooltip"
                       title="Make done"
                       class="thump-d"
                       href="#"
                     >
                       <i class="far fa-thumbs-down"></i>
+                    </a>
+                  </td>
+                  <td v-show="lead.isR_three_done === 2">
+                    <a
+                      @click="makeRthreeNotDone(lead.id)"
+                      data-toggle="tooltip"
+                      title="Make not done"
+                      class="thump"
+                      style="background:yellow"
+                      href="#"
+                    >
+                      <i class="fas fa-sync red"></i>
                     </a>
                   </td>
                   <td v-show="lead.isR_three_done === 1">
@@ -132,7 +167,7 @@
                   </td>
                   <td v-show="lead.isR_three_done === 0">
                     <a
-                      @click="makeRthreeDone(lead)"
+                      @click="makeRthreeWorking(lead)"
                       data-toggle="tooltip"
                       title="Make done"
                       class="thump-d"
@@ -333,11 +368,11 @@ export default {
         this.$toastr.e("You are not authorize to delete client");
       }
     },
-    makeRthreeDone(lead) {
+    makeRthreeWorking(lead) {
       if (this.client_r_three_done_not_done_permission) {
         if (lead.isR_one_done && lead.isR_two_done) {
           axios
-            .get(`api/makerthreedone/${lead.id}`)
+            .get(`api/makerthreeworking/${lead.id}`)
             .then(() => {
               Bus.$emit("Fired");
             })
@@ -361,11 +396,11 @@ export default {
         this.$toastr.e("You are not authorized for this action ");
       }
     },
-    makeRtwoDone(lead) {
+    makeRtwoWorking(lead) {
       if (this.client_r_two_done_not_done_permission) {
         if (lead.isR_one_done) {
           axios
-            .get(`api/makertwodone/${lead.id}`)
+            .get(`api/makertwoworking/${lead.id}`)
             .then(() => {
               Bus.$emit("Fired");
             })
@@ -395,10 +430,10 @@ export default {
         this.$toastr.e("You are not authorized for this action ");
       }
     },
-    makeRoneDone(id) {
+    makeRoneWorking(id) {
       if (this.client_r_one_done_not_done_permission) {
         axios
-          .get(`api/makeronedone/${id}`)
+          .get(`api/makeroneworking/${id}`)
           .then(() => {
             Bus.$emit("Fired");
           })
@@ -428,14 +463,18 @@ export default {
       }
     },
 
-    makeLead(id) {
+    makeLead(lead) {
       if (this.client_to_lead_permission) {
-        axios
-          .get(`api/makelead/${id}`)
-          .then(() => {
-            Bus.$emit("Fired");
-          })
-          .catch((err) => console.log(err));
+        if(lead.isActivity != 1){
+          axios
+            .get(`api/makelead/${lead.id}`)
+            .then(() => {
+              Bus.$emit("Fired");
+            })
+            .catch((err) => console.log(err));
+        }else{
+          this.$toastr.e("You can't make a Client to Lead when working");
+        }
       } else {
         this.$toastr.e("You are not authorized to change client status");
       }

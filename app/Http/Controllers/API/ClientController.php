@@ -84,6 +84,12 @@ class ClientController extends Controller
         $cli->save();
     }
 
+    public function make_r_one_working($id){
+        $cli = Lead::findOrFail($id);
+        $cli->isR_one_done = 2;
+        $cli->save();
+    }
+
     public function make_r_two_not_done($id)
     {
         $cli = Lead::findOrFail($id);
@@ -97,6 +103,13 @@ class ClientController extends Controller
         $cli->isR_two_done = 1;
         $cli->save();
     }
+
+    public function make_r_two_working($id){
+        $cli = Lead::findOrFail($id);
+        $cli->isR_two_done = 2;
+        $cli->save();
+    }
+
     public function make_r_three_not_done($id)
     {
         $cli = Lead::findOrFail($id);
@@ -108,6 +121,12 @@ class ClientController extends Controller
     {
         $cli = Lead::findOrFail($id);
         $cli->isR_three_done = 1;
+        $cli->save();
+    }
+    public function make_r_three_working($id)
+    {
+        $cli = Lead::findOrFail($id);
+        $cli->isR_three_done = 2;
         $cli->save();
     }
 }
